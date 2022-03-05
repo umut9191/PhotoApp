@@ -13,7 +13,7 @@ class SignUpFormModelValidator{
 //        if firstName.isEmpty {
 //            returnValue = false
 //        }
-        if firstName.count < 2 {// this can check if it is empty or shorter then 2 character
+        if firstName.count < SignUpConstants.firstNameMinLength || firstName.count > SignUpConstants.firtNameMaxLength{// this can check if it is empty or shorter then 2 character
             returnValue = false
         }
         return returnValue
