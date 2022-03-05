@@ -13,7 +13,20 @@
 		E2D65BDA27D3BCF1007F4A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D65BD827D3BCF1007F4A25 /* Main.storyboard */; };
 		E2D65BDC27D3BCF9007F4A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D65BDB27D3BCF9007F4A25 /* Assets.xcassets */; };
 		E2D65BDF27D3BCF9007F4A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D65BDD27D3BCF9007F4A25 /* LaunchScreen.storyboard */; };
+		E2D65BED27D3BD9F007F4A25 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D65BEC27D3BD9F007F4A25 /* PhotoAppTests.swift */; };
+		E2D65BF427D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D65BF327D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift */; };
+		E2D65BF627D3C882007F4A25 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D65BF527D3C882007F4A25 /* SignUpFormModelValidator.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2D65BEE27D3BD9F007F4A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D65BC727D3BCF1007F4A25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D65BCE27D3BCF1007F4A25;
+			remoteInfo = PhotoApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E2D65BCF27D3BCF1007F4A25 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		E2D65BDB27D3BCF9007F4A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D65BDE27D3BCF9007F4A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D65BE027D3BCF9007F4A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D65BEA27D3BD9F007F4A25 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D65BEC27D3BD9F007F4A25 /* PhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppTests.swift; sourceTree = "<group>"; };
+		E2D65BF327D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		E2D65BF527D3C882007F4A25 /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E2D65BCC27D3BCF1007F4A25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D65BE727D3BD9F007F4A25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D65BD127D3BCF1007F4A25 /* PhotoApp */,
+				E2D65BEB27D3BD9F007F4A25 /* PhotoAppTests */,
 				E2D65BD027D3BCF1007F4A25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D65BCF27D3BCF1007F4A25 /* PhotoApp.app */,
+				E2D65BEA27D3BD9F007F4A25 /* PhotoAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +89,18 @@
 				E2D65BDB27D3BCF9007F4A25 /* Assets.xcassets */,
 				E2D65BDD27D3BCF9007F4A25 /* LaunchScreen.storyboard */,
 				E2D65BE027D3BCF9007F4A25 /* Info.plist */,
+				E2D65BF527D3C882007F4A25 /* SignUpFormModelValidator.swift */,
 			);
 			path = PhotoApp;
+			sourceTree = "<group>";
+		};
+		E2D65BEB27D3BD9F007F4A25 /* PhotoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2D65BEC27D3BD9F007F4A25 /* PhotoAppTests.swift */,
+				E2D65BF327D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift */,
+			);
+			path = PhotoAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +123,24 @@
 			productReference = E2D65BCF27D3BCF1007F4A25 /* PhotoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E2D65BE927D3BD9F007F4A25 /* PhotoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D65BF027D3BD9F007F4A25 /* Build configuration list for PBXNativeTarget "PhotoAppTests" */;
+			buildPhases = (
+				E2D65BE627D3BD9F007F4A25 /* Sources */,
+				E2D65BE727D3BD9F007F4A25 /* Frameworks */,
+				E2D65BE827D3BD9F007F4A25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2D65BEF27D3BD9F007F4A25 /* PBXTargetDependency */,
+			);
+			name = PhotoAppTests;
+			productName = PhotoAppTests;
+			productReference = E2D65BEA27D3BD9F007F4A25 /* PhotoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +153,10 @@
 				TargetAttributes = {
 					E2D65BCE27D3BCF1007F4A25 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					E2D65BE927D3BD9F007F4A25 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E2D65BCE27D3BCF1007F4A25;
 					};
 				};
 			};
@@ -116,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				E2D65BCE27D3BCF1007F4A25 /* PhotoApp */,
+				E2D65BE927D3BD9F007F4A25 /* PhotoAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +190,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2D65BE827D3BD9F007F4A25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +206,29 @@
 			files = (
 				E2D65BD727D3BCF1007F4A25 /* ViewController.swift in Sources */,
 				E2D65BD327D3BCF1007F4A25 /* AppDelegate.swift in Sources */,
+				E2D65BF627D3C882007F4A25 /* SignUpFormModelValidator.swift in Sources */,
 				E2D65BD527D3BCF1007F4A25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2D65BE627D3BD9F007F4A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D65BF427D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift in Sources */,
+				E2D65BED27D3BD9F007F4A25 /* PhotoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2D65BEF27D3BD9F007F4A25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D65BCE27D3BCF1007F4A25 /* PhotoApp */;
+			targetProxy = E2D65BEE27D3BD9F007F4A25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E2D65BD827D3BCF1007F4A25 /* Main.storyboard */ = {
@@ -338,6 +422,42 @@
 			};
 			name = Release;
 		};
+		E2D65BF127D3BD9F007F4A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PUS3AGYD85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umut.surmeli.PhotoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoApp.app/PhotoApp";
+			};
+			name = Debug;
+		};
+		E2D65BF227D3BD9F007F4A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PUS3AGYD85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umut.surmeli.PhotoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoApp.app/PhotoApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +475,15 @@
 			buildConfigurations = (
 				E2D65BE427D3BCF9007F4A25 /* Debug */,
 				E2D65BE527D3BCF9007F4A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D65BF027D3BD9F007F4A25 /* Build configuration list for PBXNativeTarget "PhotoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D65BF127D3BD9F007F4A25 /* Debug */,
+				E2D65BF227D3BD9F007F4A25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
