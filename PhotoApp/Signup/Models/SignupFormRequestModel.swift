@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//This information will encoded to json 
 struct SignupFormRequestModel:Encodable{
 let firstName:String
 let lastName:String

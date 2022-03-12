@@ -7,6 +7,6 @@
 
 import Foundation
 //for convertable from json to swift struct must conform decodable protocol
-struct SigupResponseModel:Decodable{
-    
+struct SignupResponseModel:Decodable{
+    let status:String
 }
