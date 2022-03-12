@@ -82,7 +82,7 @@ class SignupWebServiceTests: XCTestCase {
             //Assert
             //"{\"Status\":\"ok\"}" --> this is what return from server side json when successed(this info cames from server side developer)
             XCTAssertNil(signupResponseModel,"the response model for a request containing unknowing JSON response, should have been nil")
-            XCTAssertEqual(error, SignupErrors.responseModelParsingError,"The signup() method didnot returned expected error")
+            XCTAssertEqual(error, SignupError.invalidresponseModel,"The signup() method didnot returned expected error")
             expectation.fulfill()//when expectation fulfilled thats means progress passed from here
         }
         self.wait(for: [expectation], timeout: 5)
@@ -95,7 +95,7 @@ class SignupWebServiceTests: XCTestCase {
         sut?.singup(withForm: signupFormRequestModel!, completionHandler: { (signupResponseModel, erorr) in
             
             //Assert
-            XCTAssertEqual(erorr, SignupErrors.invalidRequestUrlStringError,"signup() method returned different error from invalidRequestUrlStringError that expected")
+            XCTAssertEqual(erorr, SignupError.invalidRequestUrlString,"signup() method returned different error from invalidRequestUrlStringError that expected")
             XCTAssertNil(signupResponseModel,"signup() method returned not nil response but expected is being nil")
             expectation.fulfill()
         })

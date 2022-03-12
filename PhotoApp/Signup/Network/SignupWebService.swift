@@ -16,11 +16,11 @@ class SignupWebService{
         _urlString = urlString
         _urlSession = urlSession
     }
-    func singup(withForm formModel:SignupFormRequestModel,completionHandler:@escaping(SignupResponseModel?,SignupErrors?)->Void ) {
+    func singup(withForm formModel:SignupFormRequestModel,completionHandler:@escaping(SignupResponseModel?,SignupError?)->Void ) {
         guard  let url = URL(string: _urlString) else{
             //Done: create unit test  to test that a spesific error message is returned is url is nil
            // return
-            completionHandler(nil,SignupErrors.invalidRequestUrlStringError)
+            completionHandler(nil,SignupError.invalidRequestUrlString)
             return
         }
         var request = URLRequest(url: url)
@@ -39,7 +39,7 @@ class SignupWebService{
                 completionHandler(signupResponseModel,nil)
             }else{
                 //Done: Write a new unit test to handle and error here
-                completionHandler(nil,SignupErrors.responseModelParsingError)
+                completionHandler(nil,SignupError.invalidresponseModel)
             }
          }
         dataTask.resume()
