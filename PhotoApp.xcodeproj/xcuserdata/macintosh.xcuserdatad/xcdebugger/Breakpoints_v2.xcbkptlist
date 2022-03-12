@@ -18,6 +18,38 @@
             endingLineNumber = "43"
             landmarkName = "test_signupWebService_whenGivenSuccessfullResponse_ReturnSuccess()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4967655D-6BAE-4D2A-B6D7-027E7C226311 - f9bf0ff157d6fd70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;PhotoApp.SignupResponseModel&gt;, Swift.Optional&lt;PhotoApp.SignupErrors&gt;) -&gt; () in PhotoAppTests.SignupWebServiceTests.test_signupWebService_whenGivenSuccessfullResponse_ReturnSuccess() -&gt; ()"
+                  moduleName = "PhotoAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macintosh/Desktop/MyWorks/PhotoApp/PhotoAppTests/Network/SignupWebServiceTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "219">
+               </Location>
+               <Location
+                  uuid = "4967655D-6BAE-4D2A-B6D7-027E7C226311 - f9bf0ff157d6fc91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;PhotoApp.SignupResponseModel&gt;, Swift.Optional&lt;PhotoApp.SignupErrors&gt;) -&gt; () in PhotoAppTests.SignupWebServiceTests.test_signupWebService_whenGivenSuccessfullResponse_ReturnSuccess() -&gt; ()"
+                  moduleName = "PhotoAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macintosh/Desktop/MyWorks/PhotoApp/PhotoAppTests/Network/SignupWebServiceTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "219">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
