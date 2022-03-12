@@ -16,11 +16,24 @@ class SignupWebServiceTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+//We will send http request with pre defined response data for not using integration test.
+    //we will create mock version of url protocol
     func test_signupWebService_whenGivenSuccessfullResponse_ReturnSuccess() {
         //Arrange
-        let sut = SignupWebService(urlString:"http://appsdeveloperblog.com:8080/signup-mock-service/users")
-        let signupFormRequestModel = SignupFormRequestModel(firstName:"Sergey",lastName:"Kargopolov",email:"test@test.com",password:"12345678")
+        //for mock version;
+        //ephemeral is not persistance, it is short life
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [MockURLProtocol.self]
+        let urlSession = URLSession(configuration: config)
+        //setting test data to url protocol. This is the test data would be return back as a response to http request
+        let jsonString = "{\"status\":\"ok\"}"
+        MockURLProtocol.stubResponseData = jsonString.data(using: .utf8)
+        //and lastly we gave SignupWebService init method urlSession. So thats it.
+        //for mock version end here.
+        //,urlSession: urlSession
+        
+        let sut = SignupWebService(urlString:SignUpConstants.signupUrl,urlSession: urlSession)
+        let signupFormRequestModel = SignupFormRequestModel(firstName:"umut",lastName:"sürmeli",email:"umut@gmil.com",password:"1")
         
         let expectation = self.expectation(description: "Signup Web Service Response Expectation")
         //Act

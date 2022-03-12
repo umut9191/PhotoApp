@@ -22,6 +22,7 @@
 		E2D65BF427D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D65BF327D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift */; };
 		E2D65BF627D3C882007F4A25 /* SignUpFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D65BF527D3C882007F4A25 /* SignUpFormModelValidator.swift */; };
 		E2D65BF827D3E80B007F4A25 /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D65BF727D3E80B007F4A25 /* SignUpConstants.swift */; };
+		E2F0DB2727DCD29400886FEE /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F0DB2627DCD29400886FEE /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E2D65BF327D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorTests.swift; sourceTree = "<group>"; };
 		E2D65BF527D3C882007F4A25 /* SignUpFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidator.swift; sourceTree = "<group>"; };
 		E2D65BF727D3E80B007F4A25 /* SignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstants.swift; sourceTree = "<group>"; };
+		E2F0DB2627DCD29400886FEE /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				E20053AD27D6CBB40047F159 /* Network */,
 				E20053AC27D6CBAA0047F159 /* Models */,
 				E2D65BEC27D3BD9F007F4A25 /* PhotoAppTests.swift */,
+				E2F0DB2627DCD29400886FEE /* MockURLProtocol.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				E200539F27D6BD780047F159 /* SignupWebServiceTests.swift in Sources */,
 				E2D65BF427D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift in Sources */,
 				E2D65BED27D3BD9F007F4A25 /* PhotoAppTests.swift in Sources */,
+				E2F0DB2727DCD29400886FEE /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

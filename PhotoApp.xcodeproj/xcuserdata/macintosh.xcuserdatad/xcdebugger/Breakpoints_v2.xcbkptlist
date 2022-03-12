@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "114A5E3D-AB33-4766-9135-B0261F1CDD38"
+            uuid = "4967655D-6BAE-4D2A-B6D7-027E7C226311"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoAppTests/Network/SignupWebServiceTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "test_signupWebService_whenGivenSuccessfullResponse_ReturnSuccess()"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,71 +23,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "169B7B8C-0338-489C-BE56-AD59F2B9522E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Network/SignupWebService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "singup(withForm:completionHandler:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "169B7B8C-0338-489C-BE56-AD59F2B9522E - 7daaba2bf29c75dd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PhotoApp.SignupWebService.singup(withForm: PhotoApp.SignupFormRequestModel, completionHandler: (Swift.Optional&lt;PhotoApp.SigupResponseModel&gt;, Swift.Optional&lt;PhotoApp.SignupErrors&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "PhotoApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macintosh/Desktop/MyWorks/PhotoApp/PhotoApp/Signup/Network/SignupWebService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "173">
-               </Location>
-               <Location
-                  uuid = "169B7B8C-0338-489C-BE56-AD59F2B9522E - 7daaba2bf29c75dd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PhotoApp.SignupWebService.singup(withForm: PhotoApp.SignupFormRequestModel, completionHandler: (Swift.Optional&lt;PhotoApp.SigupResponseModel&gt;, Swift.Optional&lt;PhotoApp.SignupErrors&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "PhotoApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macintosh/Desktop/MyWorks/PhotoApp/PhotoApp/Signup/Network/SignupWebService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "251">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2518D432-E48D-449F-8023-044903F76131"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Network/SignupWebService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "singup(withForm:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F8EEC27A-6F64-4FC4-AF10-4C05260A8651"
+            uuid = "E3F3ACF3-6C3A-40FF-9EC7-5D88D37396A4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -103,32 +39,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F15061A1-3125-483D-AA9F-47D6F6BDC992"
+            uuid = "51E4B6EB-94DA-45D3-80DD-CE6BB6E8AE1F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Network/SignupWebService.swift"
+            filePath = "PhotoAppTests/MockURLProtocol.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "singup(withForm:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C8C7858B-745F-4636-9403-FA4648E28051"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Network/SignupWebService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "singup(withForm:completionHandler:)"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "startLoading()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

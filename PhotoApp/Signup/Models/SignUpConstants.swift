@@ -14,4 +14,6 @@ struct SignUpConstants {
     static let lastNameMaxLength = 15
     static let passwordMinLength = 6
     static let passwordMaxLength = 15
+    static let signupUrl = "http://appsdeveloperblog.com:8080/signup-mock-service/users"
+
 }
