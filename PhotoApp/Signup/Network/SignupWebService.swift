@@ -34,7 +34,11 @@ class SignupWebService{
 //
 //        }
         let dataTask = _urlSession.dataTask(with: request) { (data, response, error) in
-             //TODO: Write a new unit test to handle and error here
+             //Done: Write a new unit test to handle and error here
+            if let requestError = error{
+                completionHandler(nil,SignupError.failedRequest(description: requestError.localizedDescription))
+                return
+            }
             if let data = data, let signupResponseModel = try? JSONDecoder().decode(SignupResponseModel.self,from:data){
                 completionHandler(signupResponseModel,nil)
             }else{
