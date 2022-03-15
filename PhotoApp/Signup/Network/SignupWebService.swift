@@ -16,7 +16,7 @@ class SignupWebService{
         _urlString = urlString
         _urlSession = urlSession
     }
-    func singup(withForm formModel:SignupFormRequestModel,completionHandler:@escaping(SignupResponseModel?,SignupError?)->Void ) {
+    func singup(withForm formModel:SignupFormRequestModel,completionHandler:@escaping(useCompletionHandlerWithThisName)) {
         guard  let url = URL(string: _urlString) else{
             //Done: create unit test  to test that a spesific error message is returned is url is nil
            // return
@@ -49,3 +49,4 @@ class SignupWebService{
         dataTask.resume()
     }
 }
+typealias useCompletionHandlerWithThisName = (SignupResponseModel?,SignupError?)->Void

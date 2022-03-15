@@ -104,20 +104,20 @@ class SignupWebServiceTests: XCTestCase {
         
     }
     //this is not working maybe because of endpoint not working
-//    func test_signupWebService_whenUrlRequestFails_returnsErrorMessageDescription() {
-//        //Arrange
-//        let expectation = self.expectation(description: "A fail request expexted")
-//        let errorDescription = "A localized description of an error"
-//        MockURLProtocol.error = SignupError.failedRequest(description:errorDescription)
-//        //Act
-//        sut?.singup(withForm: signupFormRequestModel!, completionHandler: { (signupResponseModel,error) in
-//            //Assert
-//            XCTAssertEqual(error, SignupError.failedRequest(description:errorDescription))
-//            XCTAssertEqual(error?.localizedDescription,errorDescription)
-//            XCTAssertNil(signupResponseModel,"because of we expect error, signupResponseModel should be nil, but it is not nil")
-//            expectation.fulfill()
-//        })
-//        self.wait(for: [expectation], timeout: 2)
-//
-//    }
+    func test_signupWebService_whenUrlRequestFails_returnsErrorMessageDescription() {
+        //Arrange
+        let expectation = self.expectation(description: "A fail request expexted")
+        let errorDescription = "A localized description of an error"
+        MockURLProtocol.error = SignupError.failedRequest(description:errorDescription)
+        //Act
+        sut?.singup(withForm: signupFormRequestModel!, completionHandler: { (signupResponseModel,error) in
+            //Assert
+            XCTAssertEqual(error, SignupError.failedRequest(description:errorDescription))
+            XCTAssertEqual(error?.localizedDescription,errorDescription)
+            XCTAssertNil(signupResponseModel,"because of we expect error, signupResponseModel should be nil, but it is not nil")
+            expectation.fulfill()
+        })
+        self.wait(for: [expectation], timeout: 2)
+
+    }
 }

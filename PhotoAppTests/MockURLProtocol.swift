@@ -18,12 +18,16 @@ class MockURLProtocol: URLProtocol {
         return request
     }
     override func startLoading() {
-        if let signupErrorx = MockURLProtocol.error {
-            self.client?.urlProtocol(self, didFailWithError: signupErrorx)
+        if let signupErrorx = Self.error {
+            //without changing error to NsError Error description unit test not worked
+            //right now it is working
+            let errorx = NSError(domain: "testingError", code: -99, userInfo: [NSLocalizedDescriptionKey: signupErrorx.localizedDescription])
+            client?.urlProtocol(self, didFailWithError: errorx)
         }else{
-            self.client?.urlProtocol(self, didLoad: MockURLProtocol.stubResponseData ?? Data())
+            client?.urlProtocol(self, didLoad: Self.stubResponseData ?? Data())
+            client?.urlProtocolDidFinishLoading(self)
+
         }
-        self.client?.urlProtocolDidFinishLoading(self)
     }
     override func stopLoading() {
         
