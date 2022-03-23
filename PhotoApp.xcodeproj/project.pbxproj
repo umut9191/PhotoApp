@@ -29,6 +29,11 @@
 		E2D65BF827D3E80B007F4A25 /* SignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D65BF727D3E80B007F4A25 /* SignUpConstants.swift */; };
 		E2DE523627E90EE2001675F4 /* MockSignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE523527E90EE2001675F4 /* MockSignupPresenter.swift */; };
 		E2DE523827E910C9001675F4 /* SignupPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE523727E910C9001675F4 /* SignupPresenterProtocol.swift */; };
+		E2E6A40927EBC0FB002B028C /* XIBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6A40727EBC0FB002B028C /* XIBBaseViewController.swift */; };
+		E2E6A40A27EBC0FB002B028C /* XIBBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E6A40827EBC0FB002B028C /* XIBBaseViewController.xib */; };
+		E2E6A40C27EBC15E002B028C /* XIBBaseViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6A40B27EBC15E002B028C /* XIBBaseViewControllerTests.swift */; };
+		E2E6A40E27EBC36B002B028C /* ProgramaticalyCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6A40D27EBC36B002B028C /* ProgramaticalyCreatedViewController.swift */; };
+		E2E6A41027EBC479002B028C /* ProgramaticalyCreatedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6A40F27EBC479002B028C /* ProgramaticalyCreatedViewControllerTests.swift */; };
 		E2F0DB2727DCD29400886FEE /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F0DB2627DCD29400886FEE /* MockURLProtocol.swift */; };
 		E2F348FB27E275FC00F310D8 /* SignupPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F348FA27E275FB00F310D8 /* SignupPresenterTest.swift */; };
 		E2F348FD27E2781100F310D8 /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F348FC27E2781100F310D8 /* SignupFormModel.swift */; };
@@ -73,6 +78,11 @@
 		E2D65BF727D3E80B007F4A25 /* SignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstants.swift; sourceTree = "<group>"; };
 		E2DE523527E90EE2001675F4 /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
 		E2DE523727E910C9001675F4 /* SignupPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterProtocol.swift; sourceTree = "<group>"; };
+		E2E6A40727EBC0FB002B028C /* XIBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBaseViewController.swift; sourceTree = "<group>"; };
+		E2E6A40827EBC0FB002B028C /* XIBBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBBaseViewController.xib; sourceTree = "<group>"; };
+		E2E6A40B27EBC15E002B028C /* XIBBaseViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBaseViewControllerTests.swift; sourceTree = "<group>"; };
+		E2E6A40D27EBC36B002B028C /* ProgramaticalyCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticalyCreatedViewController.swift; sourceTree = "<group>"; };
+		E2E6A40F27EBC479002B028C /* ProgramaticalyCreatedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaticalyCreatedViewControllerTests.swift; sourceTree = "<group>"; };
 		E2F0DB2627DCD29400886FEE /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		E2F348FA27E275FB00F310D8 /* SignupPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTest.swift; sourceTree = "<group>"; };
 		E2F348FC27E2781100F310D8 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
@@ -231,6 +241,9 @@
 				E2D65BDB27D3BCF9007F4A25 /* Assets.xcassets */,
 				E2D65BDD27D3BCF9007F4A25 /* LaunchScreen.storyboard */,
 				E2D65BE027D3BCF9007F4A25 /* Info.plist */,
+				E2E6A40727EBC0FB002B028C /* XIBBaseViewController.swift */,
+				E2E6A40827EBC0FB002B028C /* XIBBaseViewController.xib */,
+				E2E6A40D27EBC36B002B028C /* ProgramaticalyCreatedViewController.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -244,6 +257,8 @@
 				E20053AD27D6CBB40047F159 /* Network */,
 				E20053AC27D6CBAA0047F159 /* Models */,
 				E2D65BEC27D3BD9F007F4A25 /* PhotoAppTests.swift */,
+				E2E6A40B27EBC15E002B028C /* XIBBaseViewControllerTests.swift */,
+				E2E6A40F27EBC479002B028C /* ProgramaticalyCreatedViewControllerTests.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -332,6 +347,7 @@
 				E2D65BDF27D3BCF9007F4A25 /* LaunchScreen.storyboard in Resources */,
 				E2D65BDC27D3BCF9007F4A25 /* Assets.xcassets in Resources */,
 				E2D65BDA27D3BCF1007F4A25 /* Main.storyboard in Resources */,
+				E2E6A40A27EBC0FB002B028C /* XIBBaseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +367,9 @@
 			files = (
 				E2DE523827E910C9001675F4 /* SignupPresenterProtocol.swift in Sources */,
 				E2D65BD727D3BCF1007F4A25 /* SignupViewController.swift in Sources */,
+				E2E6A40E27EBC36B002B028C /* ProgramaticalyCreatedViewController.swift in Sources */,
 				E2D65BD327D3BCF1007F4A25 /* AppDelegate.swift in Sources */,
+				E2E6A40927EBC0FB002B028C /* XIBBaseViewController.swift in Sources */,
 				E20053A727D6C7B90047F159 /* SignupError.swift in Sources */,
 				E2D65BF627D3C882007F4A25 /* SignUpFormModelValidator.swift in Sources */,
 				E2F3490327E2981500F310D8 /* SignUpModelValidatorProtocol.swift in Sources */,
@@ -374,8 +392,10 @@
 				E2F3490127E286C600F310D8 /* MockSignUpModelValidator.swift in Sources */,
 				E200539F27D6BD780047F159 /* SignupWebServiceTests.swift in Sources */,
 				E2D65BF427D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift in Sources */,
+				E2E6A40C27EBC15E002B028C /* XIBBaseViewControllerTests.swift in Sources */,
 				E2D65BED27D3BD9F007F4A25 /* PhotoAppTests.swift in Sources */,
 				E2560B3D27E5E04C00670793 /* MockSignUpWebService.swift in Sources */,
+				E2E6A41027EBC479002B028C /* ProgramaticalyCreatedViewControllerTests.swift in Sources */,
 				E2560B4127E5F1D800670793 /* MockSignupViewDelegate.swift in Sources */,
 				E2DE523627E90EE2001675F4 /* MockSignupPresenter.swift in Sources */,
 				E2560B4627E625B800670793 /* SignupViewControllerTests.swift in Sources */,
