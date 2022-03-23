@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignupWebService{
+class SignupWebService:SignUpWebServiceProtocol{
     private var _urlSession:URLSession
     private var _urlString:String
     //when ı do not want to use mock urlSession so we need to get instance of this class with real urlsession we will provide default value
