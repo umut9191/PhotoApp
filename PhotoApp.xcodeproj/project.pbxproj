@@ -30,6 +30,8 @@
 		E2DA0F9627F089F200C62236 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA0F9527F089F200C62236 /* SignupFormModelValidator.swift */; };
 		E2DA0F9827F08B4600C62236 /* SignUpErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA0F9727F08B4600C62236 /* SignUpErrorEnum.swift */; };
 		E2DA0F9B27F0AE7200C62236 /* SignupFormModelValidatorThrownErrorFunctionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA0F9A27F0AE7200C62236 /* SignupFormModelValidatorThrownErrorFunctionTest.swift */; };
+		E2DA0F9E27F0C12D00C62236 /* TextFieldUnitTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA0F9D27F0C12D00C62236 /* TextFieldUnitTestViewController.swift */; };
+		E2DA0FA127F0CE6700C62236 /* TestingUITestFieldPropertiesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA0FA027F0CE6700C62236 /* TestingUITestFieldPropertiesTest.swift */; };
 		E2DE523627E90EE2001675F4 /* MockSignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE523527E90EE2001675F4 /* MockSignupPresenter.swift */; };
 		E2DE523827E910C9001675F4 /* SignupPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE523727E910C9001675F4 /* SignupPresenterProtocol.swift */; };
 		E2E6A40927EBC0FB002B028C /* XIBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6A40727EBC0FB002B028C /* XIBBaseViewController.swift */; };
@@ -82,6 +84,8 @@
 		E2DA0F9527F089F200C62236 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
 		E2DA0F9727F08B4600C62236 /* SignUpErrorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpErrorEnum.swift; sourceTree = "<group>"; };
 		E2DA0F9A27F0AE7200C62236 /* SignupFormModelValidatorThrownErrorFunctionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorThrownErrorFunctionTest.swift; sourceTree = "<group>"; };
+		E2DA0F9D27F0C12D00C62236 /* TextFieldUnitTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldUnitTestViewController.swift; sourceTree = "<group>"; };
+		E2DA0FA027F0CE6700C62236 /* TestingUITestFieldPropertiesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingUITestFieldPropertiesTest.swift; sourceTree = "<group>"; };
 		E2DE523527E90EE2001675F4 /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
 		E2DE523727E910C9001675F4 /* SignupPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterProtocol.swift; sourceTree = "<group>"; };
 		E2E6A40727EBC0FB002B028C /* XIBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBaseViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 		E2D65BD127D3BCF1007F4A25 /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				E2DA0F9C27F0C0F500C62236 /* UITextFieldForUnitTest */,
 				E2DA0F9427F089AF00C62236 /* ForTestingErrorThrownFunction */,
 				E20053A827D6C9600047F159 /* Signup */,
 				E2D65BD227D3BCF1007F4A25 /* AppDelegate.swift */,
@@ -258,6 +263,7 @@
 		E2D65BEB27D3BD9F007F4A25 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				E2DA0F9F27F0CE4100C62236 /* TestingUITestFieldProperties */,
 				E2DA0F9927F0AE3C00C62236 /* ForTestingErrorThrownFunstion */,
 				E2560B4427E6257300670793 /* Controllers */,
 				E2560B3B27E5C96D00670793 /* Mocks */,
@@ -286,6 +292,22 @@
 				E2DA0F9A27F0AE7200C62236 /* SignupFormModelValidatorThrownErrorFunctionTest.swift */,
 			);
 			path = ForTestingErrorThrownFunstion;
+			sourceTree = "<group>";
+		};
+		E2DA0F9C27F0C0F500C62236 /* UITextFieldForUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				E2DA0F9D27F0C12D00C62236 /* TextFieldUnitTestViewController.swift */,
+			);
+			path = UITextFieldForUnitTest;
+			sourceTree = "<group>";
+		};
+		E2DA0F9F27F0CE4100C62236 /* TestingUITestFieldProperties */ = {
+			isa = PBXGroup;
+			children = (
+				E2DA0FA027F0CE6700C62236 /* TestingUITestFieldPropertiesTest.swift */,
+			);
+			path = TestingUITestFieldProperties;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +428,7 @@
 				E20053A327D6BF960047F159 /* SignupFormRequestModel.swift in Sources */,
 				E2560B3F27E5E50900670793 /* SignUpWebServiceProtocol.swift in Sources */,
 				E20053A127D6BE650047F159 /* SignupWebService.swift in Sources */,
+				E2DA0F9E27F0C12D00C62236 /* TextFieldUnitTestViewController.swift in Sources */,
 				E2F348FF27E282FC00F310D8 /* SignUpPresenter.swift in Sources */,
 				E2560B4327E5F55400670793 /* SignUpViewDelegateProtocol.swift in Sources */,
 				E2D65BF827D3E80B007F4A25 /* SignUpConstants.swift in Sources */,
@@ -420,6 +443,7 @@
 				E200539F27D6BD780047F159 /* SignupWebServiceTests.swift in Sources */,
 				E2DA0F9B27F0AE7200C62236 /* SignupFormModelValidatorThrownErrorFunctionTest.swift in Sources */,
 				E2D65BF427D3BE5A007F4A25 /* SignUpFormModelValidatorTests.swift in Sources */,
+				E2DA0FA127F0CE6700C62236 /* TestingUITestFieldPropertiesTest.swift in Sources */,
 				E2E6A40C27EBC15E002B028C /* XIBBaseViewControllerTests.swift in Sources */,
 				E2D65BED27D3BD9F007F4A25 /* PhotoAppTests.swift in Sources */,
 				E2560B3D27E5E04C00670793 /* MockSignUpWebService.swift in Sources */,
