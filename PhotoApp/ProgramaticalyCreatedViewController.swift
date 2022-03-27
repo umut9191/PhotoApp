@@ -8,7 +8,7 @@
 import UIKit
 
 class ProgramaticalyCreatedViewController: UIViewController {
-//This view controller created as well as XIBBaseViewController the differance when created cocoa touc class to anable created XIB file
+//This view controller created as well as XIBBaseViewController the differance when created cocoa touch class to anable created XIB file
     //We add this code manuelly;
     init() {
         super.init(nibName: nil, bundle: nil)
