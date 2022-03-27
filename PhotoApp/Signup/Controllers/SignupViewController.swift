@@ -9,6 +9,7 @@ import UIKit
 
 class SignupViewController: UIViewController {
  
+    @IBOutlet weak var nextVCButton: UIButton!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -34,6 +35,13 @@ class SignupViewController: UIViewController {
         signUpPresenter?.processUserSignUp(formModel: signUpFormModel)
     }
 
+    @IBAction func nextVCButtonPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let secondVC = storyboard.instantiateViewController(withIdentifier: "TextFieldUnitTestViewController") as? TextFieldUnitTestViewController else{
+            return
+        }
+        self.navigationController?.pushViewController(secondVC, animated: true)
+    }
 }
 
 extension SignupViewController:SignUpViewDelegateProtocol {
