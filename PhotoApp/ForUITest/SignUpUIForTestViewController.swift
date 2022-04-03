@@ -19,11 +19,38 @@ class SignUpUIForTestViewController: UIViewController {
     var signUpPresenter:SignupPresenterProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Checking and reading if launch argement exist;
+        
+        //Adding some code for just run on Debug mode;
+        #if DEBUG
+        if CommandLine.arguments.contains("-skipSurvey"){
+            print("Skipped Survey Page")
+        }
+        #endif
+        
+        //this is similar to CommandLine. The differances beetween them is ProcessInfo has more fonctionality.
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-skipSurvey"){
+            print("Skipped Survey Page")
+        }
+        #endif
+        
+        //Note: if we want, we can run codes in command line like immediate window in .net platform visula studio;
+        // just write 'po' thats mean print out and then write for example CommandLine.arguments so thats bring all argument passed via launhing arguments.
+        
+        
+        
         // Do any additional setup after loading the view.
         
         if signUpPresenter == nil {
             let signUpModelValidator = SignUpFormModelValidator()
-            let webService = SignupWebService(urlString: SignUpConstants.signupUrl)
+            
+            //Using Launch environment for passing Signup url on app launch;
+            let signUpUrl = ProcessInfo.processInfo.environment["signupUrl"] ?? SignUpConstants.signupUrl
+            
+            
+            let webService = SignupWebService(urlString: signUpUrl)
             let delegate = self
             signUpPresenter = SignUpPresenter(formModelValidatior: signUpModelValidator, webservice: webService, delegate: delegate)
         }

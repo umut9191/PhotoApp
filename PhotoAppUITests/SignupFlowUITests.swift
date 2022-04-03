@@ -19,6 +19,15 @@ class SignupFlowUITests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         try super.setUpWithError()
         app = XCUIApplication()
+        
+        //Adding Launch argument;
+        app.launchArguments = ["-skipSurvey","-debugServer"]
+        
+        //Adding Launch Environment;
+        app.launchEnvironment = ["signupUrl":"https://umutSurmeli.com/api/v2/sign-up-mock-service/users",
+                                 "InAppPurchasesEnabled":"true",
+                                 "InAppAdsEnabled":"true"]
+        
         app.launch()
         
          firstName =  app.textFields["textFieldFirstName"]
