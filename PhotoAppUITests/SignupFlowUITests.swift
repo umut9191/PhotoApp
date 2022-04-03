@@ -148,7 +148,36 @@ class SignupFlowUITests: XCTestCase {
         //Act
         signUpButton.tap()
         
+        
+    
+        
+        //Taking screen Shot example(a part of screen a text field);
+        //first ve closed auto screen shot taker from Edit Sheme > test > options panel to see taked custom screen shot then;
+        var emailTextFieldScreenShot = eMail.screenshot()
+        // attach screen shot on reports;
+        let emailTextFieldAttachment = XCTAttachment(screenshot: emailTextFieldScreenShot)
+        //give name to screen shot to find it easily;
+        emailTextFieldAttachment.name = "Screen Shot of Email UITextField"
+        emailTextFieldAttachment.lifetime = .keepAlways
+        add(emailTextFieldAttachment)
+        
+        
+        //Screen Shot of entire screen;
+        
+        //let currentAppWindowScreenShot = app.screenshot() //similar this code is;
+        let currentAppWindowScreenShot = XCUIScreen.main.screenshot()
+        let currentAppWindowAttachment = XCTAttachment(screenshot: currentAppWindowScreenShot)
+        currentAppWindowAttachment.name = "Sign Up Page Screenshot xx"
+        currentAppWindowAttachment.lifetime = .keepAlways
+        add(currentAppWindowAttachment)
+        
+        
+        
+        
+        
+        
         //Assert
+        
         
         //check if alert dialog is exist;
         XCTAssertTrue(app.alerts["successAlertDialog"].waitForExistence(timeout: 3),"an success alert dialog was not presented when valid sign up form was submitted")
